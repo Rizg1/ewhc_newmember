@@ -5,7 +5,7 @@ body {
 }
 
 body {
-    background: #e9eef8;
+    background: #ebebeb;
 }
 
 .label {
@@ -29,7 +29,7 @@ body {
 .skin-blue .wrapper,
 .skin-blue .main-sidebar,
 .skin-blue .left-side {
-    background-color: #8080ff !important;
+    background-color: #172A47 !important;
 }
 
 .img-login{
@@ -40,5 +40,10 @@ body {
 #container-box{
  width: 500px !important;
 
+}
+
+.login-btn {
+
+    background: #737373;
 }
 

@@ -77,7 +77,7 @@
                     <div class="form-group">
                         <div class="col-md-6 col-md-offset-3">
                             <button type="submit"
-                                    class="btn btn-primary w-100"
+                                    class="btn btn-primary w-100 login-btn"
                                     style="margin-right: 15px;">
                                 @lang('quickadmin.qa_login')
                             </button>
