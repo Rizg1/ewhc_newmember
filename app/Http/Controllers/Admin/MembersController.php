@@ -73,9 +73,11 @@ class MembersController extends Controller
         if (! Gate::allows('member_create')) {
             return abort(401);
         }
+        // dd($request->all());
         $member = Member::create($request->all());
-
-
+        // $test = $member['test'];
+        // $member['test']= implode(',',$test);
+        
 
         return redirect()->route('admin.members.index');
     }

@@ -25,7 +25,7 @@
             <div class="row">
                 <div class="col-xs-12 form-group">
                     <label for="date_avail">Date of Availment</label>
-                    <input type="text" name="date_avail" id="date_avail" class="form-control"> 
+                    <input type="date" name="date_avail" id="date_avail" class="form-control"  > 
                 </div>
             </div>      
             <div class="row">
@@ -37,13 +37,37 @@
             <div class="row">
                 <div class="col-xs-12 form-group">
                     <label for="type_avail">Type of Availment</label>
-                    <input type="text" name="type_avail" id="type_avail" class="form-control"> 
+                    <select name="type_avail" id="type_avail" class="form-control select2">
+                        <option value="">Select Option</option>
+                        <option>In-Patient</option>
+                        <option>Out-Patient</option>
+                        <option>Dental</option>
+                        <option>APE</option>
+                    </select>
                 </div>
             </div>  
             <div class="row">
                 <div class="col-xs-12 form-group">
                     <label for="test">Type of Test Done</label>
-                    <input type="text" name="test" id="test" class="form-control"> 
+                    <select name="test[]" id="test" class="form-control select2" multiple="">
+                        <option value="">Select Option</option>
+                        <option>Basic 5</option>
+                        <option>Drug Test</option>
+                        <option>Hepa B</option>
+                        <option>Anti-Hbs</option>
+                        <option>FA with Occult Blood</option>
+                        <option>FBS</option>
+                        <option>Bun</option>
+                        <option>Crea</option>
+                        <option>BUA</option>
+                        <option>T. Cholesterol</option>
+                        <option>Triglycerides</option>
+                        <option>HDL/LDL, VLDL</option>
+                        <option>SGPT</option>
+                        <option>SGOT</option>
+
+
+                    </select>
                 </div>
             </div> 
             <div class="row">
@@ -73,7 +97,7 @@
             <div class="row">
                 <div class="col-xs-12 form-group">
                     <label for="check_date">Check Date</label>
-                    <input type="text" name="check_date" id="check_date" class="form-control"> 
+                    <input type="Date" name="check_date" id="check_date" class="form-control"> 
                 </div>
             </div>
         </div>

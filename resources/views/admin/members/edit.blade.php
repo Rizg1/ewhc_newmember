@@ -26,13 +26,19 @@
             <div class="row">
                 <div class="col-xs-12 form-group">
                     <label for="date_avail">Date of Availment</label>
-                    <input type="text" name="date_avail" id="date_avail" class="form-control" value="{{$member->date_avail}}">
+                    <input type="date" name="date_avail" id="date_avail" class="form-control" data-toggle="date" value="{{$member->date_avail}}">
                 </div>
             </div>
             <div class="row">
                 <div class="col-xs-12 form-group">
                     <label for="type_avail">Type of Availment</label>
-                    <input type="text" name="type_avail" id="type_avail" class="form-control" value="{{$member->type_avail}}">
+                    <select name="type_avail" id="type_avail" class="form-control select2">
+                    <option>{{$member->type_avail}}</option>
+                    <option>In-Patient </option>
+                    <option>Out-Patient </option>
+                    <option>Dental</option>
+                    <option>APE</option>
+                    </select>
                 </div>
             </div>
             <div class="row">
@@ -68,7 +74,7 @@
             <div class="row">
                 <div class="col-xs-12 form-group">
                     <label for="check_date">Check Date</label>
-                    <input type="text" name="check_date" id="check_date" class="form-control" value="{{$member->check_date}}">
+                    <input type="date" name="check_date" id="check_date" class="form-control" value="{{$member->check_date}}">
                 </div>
             </div>
         </div>

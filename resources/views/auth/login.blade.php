@@ -5,7 +5,7 @@
 <div class="row h-100 w-100" style="justify-content:center;display:flex" id="login-box">
     <div class="col-md-5" id="container-box">
         <div class="panel panel-default">
-        <div class="panel-heading" style="text-align:center;" ><strong>{{ ucfirst(config('app.name')) }}</strong></div>
+        <div class="panel-heading" style="text-align:center;" ><img src="/adminlte/img/pre-employment.png" class="img-login"/> </div>
             <div class="panel-body">
                 @if (count($errors) > 0)
                 <div class="alert alert-danger" >
