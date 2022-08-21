@@ -44,7 +44,11 @@
             <div class="row">
                 <div class="col-xs-12 form-group">
                     <label for="test">Type of Test Done</label>
-                    <input type="text" name="test" id="test" class="form-control" value="{{$member->test}}">
+                    <select name="test_id[]" id="test" class="form-control select2" multiple="">
+                        @foreach ($tests as $test)
+                            <option value="{{ $test->id }}" {{ (in_array($test->id, $member_tests)) ? 'selected' : '' }}>{{ $test->name }}</option>
+                        @endforeach
+                    </select>
                 </div>
             </div>
             <div class="row">

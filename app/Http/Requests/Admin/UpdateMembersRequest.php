@@ -25,6 +25,15 @@ class UpdateMembersRequest extends FormRequest
         return [
             
             'name' => 'nullable',
+            'company' => 'nullable',
+            'date_avail' => 'nullable',
+            'provider' => 'nullable',
+            'type_avail' => 'nullable',
+            'amount' => 'nullable',
+            'batch_num' => 'nullable',
+            'check_num' => 'nullable',
+            'check_am' => 'nullable',
+            'check_date' => 'nullable',
         ];
     }
 }

@@ -20,7 +20,6 @@ class Create1516707719MembersTable extends Migration
                 $table->string('date_avail')->nullable();
                 $table->string('provider')->nullable();
                 $table->string('type_avail')->nullable();
-                $table->string('test')->nullable();
                 $table->string('amount')->nullable();
                 $table->string('batch_num')->nullable();
                 $table->string('check_num')->nullable();

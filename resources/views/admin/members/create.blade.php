@@ -49,22 +49,10 @@
             <div class="row">
                 <div class="col-xs-12 form-group">
                     <label for="test">Type of Test Done</label>
-                    <select name="test[]" id="test" class="form-control select2" multiple="">
-                        <option value="">Select Option</option>
-                        <option>Basic 5</option>
-                        <option>Drug Test</option>
-                        <option>Hepa B</option>
-                        <option>Anti-Hbs</option>
-                        <option>FA with Occult Blood</option>
-                        <option>FBS</option>
-                        <option>Bun</option>
-                        <option>Crea</option>
-                        <option>BUA</option>
-                        <option>T. Cholesterol</option>
-                        <option>Triglycerides</option>
-                        <option>HDL/LDL, VLDL</option>
-                        <option>SGPT</option>
-                        <option>SGOT</option>
+                    <select name="test_id[]" id="test" class="form-control select2" multiple="">
+                        @foreach ($tests as $key => $test)
+                            <option value="{{ $key }}">{{ $test }}</option>
+                        @endforeach
 
 
                     </select>
@@ -107,3 +95,14 @@
     {!! Form::close() !!}
 @stop
 
+@push('javascript')
+<script>
+$(document).ready(function() {
+    $('form-control').select2({
+      allowClear: true,
+      tags: true,
+      tokenSeparators: [',', ' ']
+    });
+});
+</script>
+@endpush

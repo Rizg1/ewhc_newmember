@@ -33,5 +33,14 @@ class Member extends Model
     {
         return $this->belongsTo(User::class, 'created_by_id');
     }
+        public function typeOfTest()
+    {
+        return $this->hasMany(TypeOfSelectedTest::class, 'member_id', 'id');
+    }
+    public function setTestIdAttribute($input)
+    {
+        $this->attributes['test_id'] = $input ? $input : null; 
+    }
     
+
 }

@@ -13,10 +13,10 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('type_of_test_selected', function (Blueprint $table) {
-            $table->increments('id');
-            $table->string('member_id')->nullable();
-            $table->string('type_of_test')->nullable();
+        Schema::create('type_of_selected_tests', function (Blueprint $table) {
+            $table->id();
+            $table->integer('member_id');
+            $table->integer('test_id');
             $table->timestamps();
         });
     }
@@ -28,6 +28,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('type_of_test_selected');
+        Schema::dropIfExists('type_of_selected_tests');
     }
 };

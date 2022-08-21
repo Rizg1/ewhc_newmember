@@ -93,7 +93,9 @@
                             @endcan
                             <td field-key='test'>
                                 @can('member_view')
-                                    {{$member->test}}
+                                    @foreach($member->typeOfTest as $t)
+                                    {{ $t->test->name }}
+                                    @endforeach
                             @endcan
                             <td field-key='amount'>
                                 @can('member_view')
