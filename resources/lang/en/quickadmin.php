@@ -27,7 +27,7 @@ return [
 	],
 
 	'members' => [
-		'title' => 'Members',
+		'title' => 'Patient / Employee',
 		'fields' => [
 			'name' => 'Name',
 			'created-by' => 'Created by',

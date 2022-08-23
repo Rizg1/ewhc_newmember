@@ -5,7 +5,7 @@
     <h3 class="page-title">@lang('quickadmin.members.title')</h3>
     @can('member_create')
         <p>
-            <a href="{{ route('admin.members.create') }}" class="btn btn-success">Add Employee</a>
+            <a href="{{ route('admin.members.create') }}" class="btn btn-success">Add Patient / Employee</a>
 
             @if(!is_null(Auth::getUser()->role_id) && config('quickadmin.can_see_all_records_role_id') == Auth::getUser()->role_id)
                 @if(Session::get('Member.filter', 'all') == 'my')

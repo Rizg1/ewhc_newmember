@@ -4,10 +4,10 @@
        style="font-size: 16px;">
         <!-- mini logo for sidebar mini 50x50 pixels -->
         <span class="logo-mini">
-          NEW MEMBER</span>
+         EWHC</span>
         <!-- logo for regular state and mobile devices -->
         <span class="logo-lg">
-          NEW MEMBER</span>
+          Pre-Employment Database</span>
     </a>
     <!-- Header Navbar: style can be found in header.less -->
     <nav class="navbar navbar-static-top">
