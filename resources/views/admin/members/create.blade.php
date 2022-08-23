@@ -97,12 +97,6 @@
 
 @push('javascript')
 <script>
-$(document).ready(function() {
-    $('form-control').select2({
-      allowClear: true,
-      tags: true,
-      tokenSeparators: [',', ' ']
-    });
-});
+
 </script>
 @endpush
