@@ -17,14 +17,14 @@ class Create1516707719MembersTable extends Migration
                 $table->increments('id');
                 $table->string('name')->nullable();
                 $table->string('company')->nullable();
-                $table->string('date_avail')->nullable();
+                $table->date('date_avail')->nullable();
                 $table->string('provider')->nullable();
                 $table->string('type_avail')->nullable();
                 $table->string('amount')->nullable();
                 $table->string('batch_num')->nullable();
                 $table->string('check_num')->nullable();
                 $table->string('check_am')->nullable();
-                $table->string('check_date')->nullable();
+                $table->date('check_date')->nullable();
                 
                 $table->timestamps();
                 $table->softDeletes();

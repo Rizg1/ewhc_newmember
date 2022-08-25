@@ -80,9 +80,11 @@
                                     {{$member->company}}
                             @endcan
                             <td field-key='date_avail'>
-                                @can('member_view')
-                                    {{$member->date_avail}}
-                            @endcan
+                            @if(!is_null($member->date_avail))
+                                    {{$member->date_avail->isoFormat('d-MMM-Y')}}
+                            @else 
+                            -
+                            @endif
                             <td field-key='provider'>
                                 @can('member_view')
                                     {{$member->provider}}
@@ -114,9 +116,11 @@
                                     {{$member->check_am}}
                             @endcan
                             <td field-key='check_date'>
-                                @can('member_view')
-                                    {{$member->check_date}}
-                            @endcan
+                            @if(!is_null($member->check_date))    
+                                    {{$member->check_date->isoFormat('d-MMM-Y')}}
+                            @else 
+                            - 
+                            @endif
                             @if( request('show_deleted') == 1 )
                                 <td>
                                     @can('member_delete')
