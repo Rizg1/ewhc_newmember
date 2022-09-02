@@ -80,8 +80,8 @@ class AuthServiceProvider extends ServiceProvider
         Gate::define('member_delete', function ($user) {
             return in_array($user->role_id, [1, 2, 3]);
         });
-
-
-        //
+        
+        // Auth gates for: Report
+        
     }
 }

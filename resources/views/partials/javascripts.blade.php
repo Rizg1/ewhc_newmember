@@ -7,6 +7,10 @@
     window.printButtonTrans = '{{ trans("quickadmin.qa_print") }}';
     window.colvisButtonTrans = '{{ trans("quickadmin.qa_colvis") }}';
 </script>
+
+<script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+
 <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
 <script src="//cdn.datatables.net/1.10.9/js/jquery.dataTables.min.js"></script>
 <script src="//cdn.datatables.net/buttons/1.2.4/js/dataTables.buttons.min.js"></script>
@@ -22,6 +26,8 @@
 <script src="{{ url('adminlte/js') }}/bootstrap.min.js"></script>
 <script src="{{ url('adminlte/js') }}/select2.full.min.js"></script>
 <script src="{{ url('adminlte/js') }}/main.js"></script>
+
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
 
 <script src="{{ url('adminlte/plugins/slimScroll/jquery.slimscroll.min.js') }}"></script>
 <script src="{{ url('adminlte/plugins/fastclick/fastclick.js') }}"></script>

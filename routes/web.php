@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\Admin\MembersExportController;
+
 Route::get('/', function () { return redirect('/admin/home'); });
 
 // Authentication Routes...
@@ -23,7 +25,7 @@ $this->router->post('register', 'Auth\RegisterController@register')->name('auth.
 
 Route::group(['middleware' => ['auth'], 'prefix' => 'admin', 'as' => 'admin.'], function () {
     Route::get('/home', 'HomeController@index');
-
+    
 
     Route::resource('roles', 'Admin\RolesController');
     Route::post('roles_mass_destroy', ['uses' => 'Admin\RolesController@massDestroy', 'as' => 'roles.mass_destroy']);
@@ -34,7 +36,8 @@ Route::group(['middleware' => ['auth'], 'prefix' => 'admin', 'as' => 'admin.'], 
     Route::post('members_mass_destroy/{id}', ['uses' => 'Admin\MembersController@restore', 'as' => 'members.restore']);
     Route::delete('members_mass_destroy/{id}', ['uses' => 'Admin\MembersController@perma_del', 'as' => 'members.perma_del']);
 
-
+    Route::resource('reports', 'Admin\ReportsController');
+    Route::post('/export', MembersExportController::class)->name('export');
 
  
 });

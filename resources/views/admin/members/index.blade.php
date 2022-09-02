@@ -81,7 +81,7 @@
                             @endcan
                             <td field-key='date_avail'>
                             @if(!is_null($member->date_avail))
-                                    {{$member->date_avail->isoFormat('d-MMM-Y')}}
+                                    {{$member->date_avail}}
                             @else 
                             -
                             @endif
@@ -117,7 +117,7 @@
                             @endcan
                             <td field-key='check_date'>
                             @if(!is_null($member->check_date))    
-                                    {{$member->check_date->isoFormat('d-MMM-Y')}}
+                                    {{$member->check_date}}
                             @else 
                             - 
                             @endif

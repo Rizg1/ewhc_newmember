@@ -159,7 +159,7 @@ class MembersController extends Controller
         /***
          * 1. check kong walang laman yung dropdown, kong wala delete lang yung laman ng type of selected. no need na mag insert
          * 2. otherwise gawin mo itong nasa baba
-         * ito para matapos naa
+         * 
          * 
          */
         if (!isset($request->test_id))

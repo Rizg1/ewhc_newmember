@@ -27,6 +27,7 @@ class TestSeed extends Seeder
             ['id' => 12, 'name' => 'HDL/LDL, VLDL',],
             ['id' => 13, 'name' => 'SGPT',],
             ['id' => 14, 'name' => 'SGOT',],
+            ['id' => 15, 'name' => 'SAGO',],
 
 
 

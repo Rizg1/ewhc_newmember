@@ -10,16 +10,16 @@ $(document).ready(function () {
         retrieve: true,
         dom: 'lBfrtip<"actions">',
         columnDefs: [],
-        "iDisplayLength": 25,
+        "iDisplayLength": 10,
         "aaSorting": [],
         buttons: [
-            // {
-            //     extend: 'copy',
-            //     text: window.copyButtonTrans,
-            //     exportOptions: {
-            //         columns: ':visible'
-            //     }
-            // },
+            {
+                extend: 'copy',
+                text: window.copyButtonTrans,
+                exportOptions: {
+                    columns: ':visible'
+                }
+            },
             // {
             //     extend: 'csv',
             //     text: window.csvButtonTrans,
@@ -27,13 +27,13 @@ $(document).ready(function () {
             //         columns: ':visible'
             //     }
             // },
-            // {
-            //     extend: 'excel',
-            //     text: window.excelButtonTrans,
-            //     exportOptions: {
-            //         columns: ':visible'
-            //     }
-            // },
+            {
+                extend: 'excel',
+                text: window.excelButtonTrans,
+                exportOptions: {
+                    columns: ':visible'
+                }
+            },
             // {
             //     extend: 'pdf',
             //     text: window.pdfButtonTrans,
@@ -48,13 +48,13 @@ $(document).ready(function () {
             //         columns: ':visible'
             //     }
             // },
-            // {
-            //     extend: 'colvis',
-            //     text: window.colvisButtonTrans,
-            //     exportOptions: {
-            //         columns: ':visible'
-            //     }
-            // },
+            {
+                extend: 'colvis',
+                text: window.colvisButtonTrans,
+                exportOptions: {
+                    columns: ':visible'
+                }
+            },
         ]
     };
     $('.datatable').each(function () {

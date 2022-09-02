@@ -41,3 +41,5 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/jquery-ui-timepicker-addon/1.4.5/jquery-ui-timepicker-addon.min.css"/>
 <link rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.5.0/css/bootstrap-datepicker.standalone.min.css"/>
+<link rel="stylesheet" type="text/css" 
+      href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />

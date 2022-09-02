@@ -17,7 +17,7 @@ class Member extends Model
     use SoftDeletes, FilterByUser;
 
     protected $guarded = [];
-    protected $dates = ['date_avail', 'check_date'];
+ 
     
 
     /**
